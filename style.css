@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    background: black;
+    
+}
+div{
+    align-items: center;
+    justify-content: center; 
+}
+
+canvas {
+    display: block;
+    background: black;
+}
