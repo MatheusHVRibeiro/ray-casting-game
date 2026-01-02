@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ray Casting JS</title>
+    <style>
+        body {
+            margin: 0;
+
+        }
+
+        canvas {
+            display: block;
+            background: black;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="upload" id="importar">Importar Mapa</label>
+    <input type="file" id="upload" accept=".json" style="display: none;">
+    <button id="download" onclick="download()">Baixar Mapa</button>
+
+    <canvas id="game"></canvas>
+    <script type="module" src="raycaster.js"></script>
+</body>
+
+</html>
