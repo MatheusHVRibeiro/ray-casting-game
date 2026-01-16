@@ -1,5 +1,6 @@
 import { Raycaster } from "./src/raycaster.js";
 import { Sprite, Transform } from "./src/sprite.js";
+import { Sound } from "./src/sound.js";
 
 export class Main{
     constructor(){
@@ -10,9 +11,11 @@ export class Main{
         this.sprites = [];
         this.sprites.push(new Sprite("arma.json",new Transform(this.canvas.width/2,this.canvas.height-200,14,14)));
         requestAnimationFrame(this.update);
+        this.som = new Sound("teste.json");
     }
 
     update() {
+        this.som.playSong();
         if (!this.raycast.mapa.matris) {
             requestAnimationFrame(this.update);
             return;
